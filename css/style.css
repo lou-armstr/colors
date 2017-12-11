@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.blue,
+footer {
+    background-color: #01084f;
+}
+
+.violet {
+    background-color: #391954;
+}
+
+.blue-violet {
+    background-color: #631e50;
+}
+
+.pink {
+    background-color: #a73c5a;
+}
+
+.orange {
+    background-color: #ff7954;
+}
+
+.yellow {
+    background-color: #f4a644;
+}
+
+section {
+    background-color: #faffb4;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+
+}
+
+section h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+section .note:after {
+    display: block;
+    content: '';
+    height: 1px;
+    background-color: rgba(105, 105, 105, 0.999);
+    margin-top: .5em;
+}
+
+footer p {
+    display: block;
+    border: 2px solid black;
+    padding: .3em;
+}
+
+body {
+    margin: 0;
+    background-color: ;
+    background-color: #FAEBD7;
+    color: rgba(105, 105, 105, 0.999);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid rgba(105, 105, 105, 0.999);
+    grid-template-columns: 1fr 40% 1fr;
+    grid-template-rows: repeat(10, 1fr) 40px;
+    grid-gap: 0;
+    position: relative;
+
+}
+
+.container .row {
+    grid-column: 1/ span 3;
+}
+
+.container section {
+    border-radius: 5px;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    grid-row: 5 / 8;
+    grid-column: 2 / 3;
+    padding: 1.5em;
+    min-width: 200px;
+    opacity: 0.5;
+
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(105, 105, 105, 0.7);
+    height: 100%;
+    
+}
+footer {
+    grid-column: 1 / span 3;
+    grid-row: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addition {
+    color: antiquewhite;
+    opacity: 0.3;
+}
